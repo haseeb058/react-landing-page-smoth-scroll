@@ -1,0 +1,16 @@
+@import "styles/breakpoints";
+
+.layoutWrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  main {
+    height: 100vh;
+    @media (max-width: $sm) {
+      margin-left: 0;
+    }
+    .containerStyle {
+      margin-top: 60px;
+    }
+  }
+}

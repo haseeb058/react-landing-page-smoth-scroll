@@ -1,0 +1,42 @@
+@import "styles/_breakpoints.scss";
+@import "styles/_colors.scss";
+@import "styles/_mixin.scss";
+
+.mainWrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .FormWrapper {
+    width: 100%;
+    max-width: 650px !important;
+  }
+}
+
+.gridTwo {
+  margin-top: 10px;
+  @include gridTwo(10, 10);
+}
+
+.messageWrapper {
+  margin: 15px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerDiv {
+  margin-top: 30px;
+  .btnLogin {
+    max-width: 100px;
+  }
+}
+
+.messageLabel {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626579;
+}

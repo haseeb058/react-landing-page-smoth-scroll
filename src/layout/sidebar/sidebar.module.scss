@@ -1,0 +1,70 @@
+@use "styles/_colors.scss" as *;
+@use "styles/_breakpoints.scss" as *;
+
+.sidebarCard {
+  height: 100vh;
+  overflow-y: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  z-index: 5;
+  padding: 20px;
+
+  .sideHeader {
+    h1 {
+      text-align: center;
+      font-weight: bolder;
+      margin-top: 5px;
+    }
+  }
+
+  .listDiv {
+    margin-top: 30px;
+    .ul {
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 6px 0;
+        padding: 7px 10px;
+        cursor: pointer;
+        border-left: 2px solid #fafafa;
+
+        &:hover {
+          color: #2bb572;
+          border-left: 2px solid #2bb572;
+        }
+      }
+    }
+  }
+}
+
+.menu_wrapper {
+  border-bottom: 1px solid #c9c7c7;
+  border-radius: 0px;
+  padding: 0px !important;
+  .side_menu {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 3px;
+    &:hover {
+      background-color: #f1f1f1;
+      border-radius: 8px;
+    }
+  }
+}
+
+.main_title {
+  font-size: 18px;
+  font-weight: 400 !important;
+}
+
+.active {
+  color: #2bb572;
+  border-left: 2px solid #2bb572 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c !important;
+}
