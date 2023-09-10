@@ -9,7 +9,16 @@ const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <div className={style.titleDiv}>
-        <a href={"/"}>Demo</a>
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-65}
+          duration={500}
+        >
+          Demo
+        </Link>
       </div>
       <div className={style.flex}>
         <div className={style.navMenuWrapper}>
